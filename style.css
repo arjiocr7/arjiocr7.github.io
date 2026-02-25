@@ -1,0 +1,385 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #87CEEB; /* Solid light blue color */
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    vertical-align: middle;
+}
+
+.logo span {
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #000; /* Black color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000; /* Black color */
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#home-section {
+    text-align: center;
+}
+
+#home-section h2 {
+    color: #4682b4; /* Light blue color */
+}
+
+#home-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-products .product {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    background-color: #e9ecef; /* Light grey background for product items */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.featured-products .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.featured-products .product h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.featured-products .product p {
+    font-size: 1em;
+    color: #333;
+}
+
+.featured-products .product button {
+    padding: 10px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.featured-products .product button:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
+
+#login-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-section h2 {
+    color: #4682b4; /* Light blue color */
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form button {
+    padding: 10px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
+
+#login-message {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+}
+
+#about-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-section h2 {
+    color: #4682b4; /* Light blue color */
+}
+
+#about-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+#contact-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-section h2 {
+    color: #4682b4; /* Light blue color */
+}
+
+#contact-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
+
+#contact-message {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#password-strength {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+form button, #login-again-button {
+    padding: 10px;
+    background-color: #87CEEB; /* Solid light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+form button:hover, #login-again-button:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
+
+#products-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#products-section h2 {
+    color: #4682b4; /* Light blue color */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+}
+
+.add-to-basket {
+    padding: 10px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.add-to-basket:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
+
+#basket-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#basket-section h2 {
+    color: lightblue;
+}
+
+#basket-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#basket-items li {
+    padding: 5px 0;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #87CEEB; /* Solid light blue color */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.increase-quantity, .decrease-quantity, .delete-item {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #87CEEB; /* Light blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.increase-quantity:hover, .decrease-quantity:hover, .delete-item:hover {
+    background-color: #00BFFF; /* Darker light blue color */
+}
